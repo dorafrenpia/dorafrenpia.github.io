@@ -1,0 +1,181 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #282c34;
+    color: white;
+  }
+  
+  .about, .projects, .contact {
+    margin: 40px 0;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    color: #0077cc;
+  }
+  h2.subjudul {
+    font-size: 1em;
+    color: gray;
+  }
+  h3.subjudul {
+    font-size: 0.8em;
+    color: gray;
+  }
+  .project-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+  }
+  
+  a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+  }
+  .project-img {
+    width: 100px;
+    border-radius: 10px;
+  }
+
+
+
+  .sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: #282c34; /* Menggunakan background-color yang baru */
+    color: white; /* Teks berwarna putih */
+    padding: 40px 0; /* Padding atas dan bawah */
+    text-align: center; /* Teks terpusat */
+    z-index: 999; /* Agar header tetap di atas konten lainnya */.
+    
+  }  
+  .hamburger {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    position: absolute;    /* Agar posisinya relatif terhadap .sticky-header */
+    top: 50%;              /* Posisikan vertikal di tengah */
+    left: 20px;           /* Jarak dari kanan */
+    transform: translateY(-50%); /* Biar bener-bener tengah */
+    z-index: 1000;         /* Pastikan muncul di atas elemen lain */
+  }
+  
+  .side-nav {
+    z-index: 1000; /* Agar header tetap di atas konten lainnya */
+    position: fixed;
+    top: 0;
+    right: -200px; /* Sidebar berada di luar layar */
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 20px;
+    transition: right 0.3s ease; /* Animasi untuk menggeser sidebar */
+  }
+  
+  .side-nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .side-nav li {
+    margin: 20px 0;
+  }
+  
+  .side-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+  }
+  
+  .side-nav a:hover {
+    background-color: #575757;
+  }
+  
+  .side-nav.active {
+    right: 0; /* Sidebar muncul di layar */
+  }
+
+  .project-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  flex-wrap: wrap; /* biar tetap responsif di layar kecil */
+}
+.isi {
+  flex: 1;
+  min-width: 300px; /* Minimum width untuk isi */
+}
+.project-main {
+  flex: 1;
+  min-width: 300px;
+}
+
+.feature-side {
+  flex: 1;
+  min-width: 250px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-left: 2px solid #ddd;
+}
+
+.project-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.toggle-btn {
+  background-color: #575757;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.toggle-btn:hover {
+  background-color: #444;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+  }
+
+  .feature-side {
+    border-left: none;
+    border-top: 2px solid #ddd;
+  }
+}

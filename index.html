@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frendy Hansung - Portofolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <header class="sticky-header">
+        <h1>Frendy Hansung</h1>
+        <p>Web Developer | Game Developer | UI/UX Enthusiast</p>
+        <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
+      </header>
+  <div class="side-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <section class="about"id="about">
+    <h2>Tentang Saya</h2>
+    <div class="project-card">
+        <p>
+            Saya Frendy Hansung, pengembang website dan game yang fokus pada pengalaman pengguna dan desain menarik. Ketertarikan saya pada web development dimulai sejak usia 10 tahun, saat masih di sekolah dasar. Sementara itu, minat saya di dunia game muncul saat saya berusia 16 tahun, saat masih di SMK.
+
+Saya selalu tertantang untuk belajar hal baru dan terus mengasah keterampilan secara otodidak, baik dalam bekerja mandiri maupun dalam tim, untuk menghasilkan karya digital yang fungsional dan menyenangkan.
+
+
+        </p>
+          
+</div>
+  </section>
+
+
+  <section class="projects"id="projects">
+
+
+    <h2>Project Saya</h2>
+    <div class="project-card">
+        <a href="https://frendyhansung.itch.io/sevendays" target="_blank">
+          <img src="images/logogameSevenDays.png" alt="Seven Days" class="project-img">
+        </a>
+        <div class="isi">
+            <h2>Seven Days</h2>
+            <h2 class="subjudul">(itch.io, PlayStore)</h2>
+            <h3 class="subjudul">Mulai 31/12/2024 , Selesai 23/3/2025</h3>
+            <p>Game dengan tantangan bertahan selama tujuh hari penuh dalam dunia survival yang intens.</p>
+        
+            <!-- Konten ringkas -->
+            <p><strong>Fitur Singkat:</strong> Login Google, leaderboard, 
+              Save ke Cloud, Redeem Code, IAP.</p>
+            <p><a href="https://play.google.com/store/apps/details?id=com.HanzGrez.SevenDays" target="_blank">SevenDays Closed Testing di Google Play</a></p>
+            <p><a href="https://frendyhansung.itch.io/sevendays" target="_blank">SevenDays Release Full di Itch.io</a></p>
+        </div>
+        <!-- Konten selengkapnya (disembunyikan dulu) -->
+        <div class="more-content" style="display: none;">
+          <ul>
+            <li>✅ Login dengan Akun Google</li>
+            <li>☁️ Cloud Save & Load</li>
+            <li>🎁 Redeem Code Reward</li>
+            <li>🛒 Pembelian Item dari Google (IAP)</li>
+            <li>🏡 Bangun Rumah & Kelola Penduduk</li>
+            <li>🍗 Sistem Kelaparan, HP, Stamina, dan Damage</li>
+            <li>🧙‍♂️ Panggil Penduduk & Sewa Pasukan Bayaran</li>
+            <li>👹 Lawan Boss Setiap 7 Hari</li>
+            <li>✨ Gunakan Spell: Heal & Damage Booster</li>
+            <li>🏰 Bangun Menara Pertahanan</li>
+            <li>📺 Unity Ads (Rewarded Ads)</li>
+            <li>🏆 Leaderboard Global</li>
+          </ul>
+        </div>
+        <button class="toggle-btn" onclick="toggleMore(this)">Lihat Selengkapnya</button>
+      </div>
+      
+      <div class="project-card">
+        <a href="https://namakamu.itch.io/nama-game" target="_blank">
+          <img src="images/IconCuanSimulator.png" alt="Cuan Simulator" class="project-img">
+        </a>
+        <div class="isi">
+          <h2>Cuan Simulator</h2>
+          <h2 class="subjudul">(itch.io, PlayStore)</h2>
+          <h3 class="subjudul">Mulai 27/3/2024 , On Going</h3>
+          <p>Game idle sederhana dengan fitur upgrade, dan reward iklan.</p>
+          
+          <!-- Konten ringkas -->
+          <p><strong>Fitur Singkat:</strong> Upgrade, Login Google, Save ke Cloud, IAP,
+            Redeem Code, Iklan Unity.</p> 
+            
+          <p><a href="https://play.google.com/apps/testing/com.HanzGrez.Cuan_Simulator" target="_blank">Cuan Simulator Closed Testing di Google Play</a></p>
+          <p><a href="https://frendyhansung.itch.io/cuansimulator" target="_blank">Cuan Simulator Release Full di Itch.io</a></p>
+        </div>
+      
+        <!-- Konten selengkapnya (disembunyikan dulu) -->
+        <div class="more-content" style="display: none;">
+          <ul>
+            <li>💸 Sistem Idle Clicker</li>
+            <li>⬆️ Upgrade Income & Speed</li>
+            <li>✅ Login dengan Akun Google</li>
+            <li>☁️ Cloud Save & Load</li>
+            <li>🎁 Redeem Code Reward</li>
+            <li>🛒 Pembelian Item dari Google (IAP)</li>
+            <li>📺 Unity Ads (Rewarded Ads, Banner Ads)</li>
+            <li>🏦 Investasi Saham & Crypto</li>
+            <li>🚗 Beli Barang Mewah: Mobil, Villa, Pesawat</li>
+            <li>💼 Bangun Bisnis & Dapatkan Keuntungan</li>
+          </ul>
+          
+        </div>
+      
+        <!-- Tombol untuk toggle -->
+        <button class="toggle-btn" onclick="toggleMore(this)">Lihat Selengkapnya</button>
+      </div>
+      
+
+
+    <div class="project-card">
+      <h3>Website Portfolio</h3>
+      <p>Web statis yang menampilkan informasi dan project yang pernah saya buat.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Kontak</h2>
+    <p>Email: <a href="mailto:frendyconsole@gmail.com">frendyconsole@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/nothing.fr3" target="_blank">@nothing.fr3</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Frendy Hansung</p>
+  </footer>
+</body>
+</html>
