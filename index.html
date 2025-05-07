@@ -1,20 +1,71 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Frendy Hansung - Portofolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.png" type="image/x-icon">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portofolio Frendy Hansung, Web & Game Developer Indonesia.">
+    <title>Frendy Hansung - Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+  </head>
+  
 
 <body>
     <script src="script.js"></script>
     <header class="sticky-header">
         <h1>Frendy Hansung</h1>
+        <div class="spasi">
         <p>Web Developer | Game Developer | UI/UX Enthusiast</p>
+      </div>
         <div class="hamburger" onclick="toggleSidebar()">&#9776;</div>
       </header>
+      
+      <div class="right-sidebar">
+        
+        <section class="skills" id="skills">
+          
+          <h2>Keahlian</h2>
+          <strong>
+          <ul>
+            <li>HTML, CSS, JavaScript, JSON, Lua</li>
+            <li>Lua (Roblox) </li>
+            <li>Unity, C# (2D)</li>
+            <li>UI/UX Design (Figma)</li>
+            <li>Git & GitHub</li>
+            <li>Microsoft Office</li>
+            <li>Teknik Komputer dan Jaringan</li>
+          </ul>
+        </strong>
+        </section>
+        
+       
+        
+      
+        <br>
+        
+          <h2>Pendidikan</h2>
+          <ul>
+            <li><strong>Institut Bisnis dan Teknologi Pelita Indonesia (IBTPI)</strong><br>
+                Sedang menempuh pendidikan, Semester 4<br>
+                Program Studi: Teknik Informatika
+            </li>
+            <li><strong>Sekolah Menengah Kejuruan (SMK) YPPI Tualang</strong><br>
+                Tahun Lulus: 2023<br>
+                Jurusan: Teknik Komputer dan Jaringan
+            </li>
+            <li><strong>Sekolah Menengah Pertama (SMP) YPPI Tualang</strong><br>
+                Tahun Lulus: 2020
+            </li>
+            <li><strong>Sekolah Dasar (SD) YPPI Tualang</strong><br>
+                Tahun Lulus: 2017
+            </li>
+          </ul>
+        
+        
+        
+      </div>
+      
+      
   <div class="side-nav">
     <ul>
       <li><a href="#">Home</a></li>
@@ -23,6 +74,8 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
+
+  <main class="main-content">
   <section class="about"id="about">
     <h2>Tentang Saya</h2>
     <div class="project-card">
@@ -36,7 +89,45 @@ Saya selalu tertantang untuk belajar hal baru dan terus mengasah keterampilan se
           
 </div>
   </section>
-
+  <section class="experience" id="experience">
+    <h2>Pengalaman</h2>
+  
+    <div class="project-card">
+      <ul>
+        <li>
+          <h3><strong>Magang Accounting/Pajak</strong><br></h3>
+          PT Indah Kiat Pulp & Paper Tbk., Perawang, Riau<br>
+          <em>15 Juni – 15 September 2022</em>
+          <ul>
+            <li>Membantu tim accounting dalam pengelolaan laporan keuangan bulanan.</li>
+            <li>Menyusun laporan pajak bulanan dan tahunan sesuai dengan ketentuan yang berlaku.</li>
+            <li>Membantu dalam audit internal dan pengecekan dokumen pajak.</li>
+            <li>Melaksanakan tugas administratif lainnya yang diberikan oleh atasan langsung.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="organization" id="organization">
+    <h2>Pengalaman Organisasi</h2>
+  
+    <div class="project-card">
+      <ul>
+        <li>
+          <h3>Staff IT Support</h3>
+          <p><strong>Business Center – SMK YPPI Tualang</strong></p>
+          <p><em>Periode: 2021 – 2023</em></p>
+          <ul>
+            <li>Membantu pemeliharaan dan troubleshooting perangkat komputer di lingkungan sekolah.</li>
+            <li>Menyediakan dukungan teknis saat pelatihan atau acara sekolah.</li>
+            <li>Berkontribusi dalam instalasi dan pengelolaan jaringan internal.</li>
+           
+          </ul>
+        </li>
+      </ul>
+    </div>
+ 
+  
 
   <section class="projects"id="projects">
 
@@ -119,21 +210,44 @@ Saya selalu tertantang untuk belajar hal baru dan terus mengasah keterampilan se
       
 
       
-
+      <h2>Website Portfolio</h2>
     <div class="project-card">
-      <h3>Website Portfolio</h3>
+      
       <p>Web statis yang menampilkan informasi dan project yang pernah saya buat.</p>
     </div>
   </section>
 
+ 
+
+  <section class="certificates" id="certificates">
+    
+    <h2>Sertifikat</h2>
+    <div class="project-card">
+    <ul>
+      
+        <strong>Dicoding:</strong> Belajar Membangun Game dengan Unity (2024)
+        <a href="link_sertifikat.pdf" target="_blank">[Lihat]</a>
+      <br>
+        <strong>Google:</strong> Web Developer Fundamentals (2023)
+        <a href="link_sertifikat.pdf" target="_blank">[Lihat]</a>
+      
+    </ul>
+  </div>
+  </section>
+ 
+
   <section class="contact" id="contact">
     <h2>Kontak</h2>
-    <p>Email: <a href="mailto:frendyconsole@gmail.com">frendyconsole@gmail.com</a></p>
+    <div class="project-card-normal">
+    <p>Email: <a href="mailto:frendyhansung@gmail.com">frendyconsole@gmail.com</a></p>
     <p>Instagram: <a href="https://instagram.com/nothing.fr3" target="_blank">@nothing.fr3</a></p>
+  </div>
   </section>
 
+</main>
   <footer>
     <p>© 2025 Frendy Hansung</p>
   </footer>
+  
 </body>
 </html>

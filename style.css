@@ -10,15 +10,21 @@
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
-    padding: 20px;
+    padding: 20px; /* Padding untuk body */
+    margin: 0; /* Menghapus margin default */
+    padding-right: 240px; /* Memberikan ruang untuk sidebar */
+  }
+  header {
+    width: 100%;  /* Memastikan header penuh */
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    z-index: 100;
   }
   
-  header {
-    text-align: center;
-    padding: 40px 0;
-    background-color: #282c34;
-    color: white;
-  }
   
   .about, .projects, .contact {
     margin: 40px 0;
@@ -42,8 +48,21 @@
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin-bottom: 15px;
+    flex-wrap: wrap; /* biar tetap responsif di layar kecil */
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
   }
-  
+
+  .project-card-normal {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    flex-wrap: wrap; /* biar tetap responsif di layar kecil */
+    gap: 30px;
+  }
   a {
     color: #0077cc;
     text-decoration: none;
@@ -54,11 +73,17 @@
   }
   
   footer {
+    background-color: #333;
+    color: white;
     text-align: center;
-    margin-top: 50px;
-    padding-top: 20px;
-    border-top: 1px solid #ccc;
+    padding: 20px 0;
+    width: 100%;  /* Membuat footer penuh */
+    position: relative;
+    clear: both; /* Menghindari masalah layout dengan sidebar */
+    bottom: 0;
   }
+  
+  
   .project-img {
     width: 100px;
     border-radius: 10px;
@@ -73,7 +98,7 @@
     color: white; /* Teks berwarna putih */
     padding: 40px 0; /* Padding atas dan bawah */
     text-align: center; /* Teks terpusat */
-    z-index: 999; /* Agar header tetap di atas konten lainnya */.
+    z-index: 999; /* Agar header tetap di atas konten lainnya */
     
   }  
   .hamburger {
@@ -124,14 +149,7 @@
     right: 0; /* Sidebar muncul di layar */
   }
 
-  .project-card {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  background-color: #f9f9f9;
-  padding: 20px;
-  flex-wrap: wrap; /* biar tetap responsif di layar kecil */
-}
+
 .isi {
   flex: 1;
   min-width: 300px; /* Minimum width untuk isi */
@@ -169,13 +187,98 @@
   background-color: #444;
 }
 
+
+
+
+.main-content {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.right-sidebar {
+  position: fixed;
+  top: 0%; /* Agar tidak tertutup header */
+  right: 0;
+  width: 240px;
+  height: 100%;
+  background-color: #fafafa; /* Soft white */
+  padding: 20px;
+  border-left: 1px solid #ccc;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  font-size: 15px;
+  overflow-y: auto;
+}
+
+/* Optional, jika header dan konten utama menggunakan wrapper */
+
+.right-sidebar h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.right-sidebar ul {
+  padding-left: 20px;
+  
+  margin: 0;
+}
+
+.right-sidebar li {
+  margin: 8px 0;
+  font-size: 0.95em;
+}
+.project-card ul {
+  padding-left: 20px;
+}
 @media (max-width: 768px) {
   .project-card {
     flex-direction: column;
   }
 
+
   .feature-side {
     border-left: none;
     border-top: 2px solid #ddd;
   }
+  .isi {
+    flex: 0;
+    min-width: 120px; /* Minimum width untuk isi */
+  }
+.main-content {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 10px;
+}
+.right-sidebar {
+  position: fixed;
+  top: 0%; /* Agar tidak tertutup header */
+  right: 0;
+  width: 240px;
+  height: 100%;
+  background-color: #fafafa; /* Soft white */
+  padding: 20px;
+  border-left: 1px solid #ccc;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  font-size: 15px;
+  
+}
+
+/* Optional, jika header dan konten utama menggunakan wrapper */
+
+.right-sidebar h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.right-sidebar ul {
+  padding-left: 20px;
+  
+  margin: 0;
+}
+.sticky-header{
+  font-size: 14px;
+  
+}  
+.sticky-header .spasi{
+  
+  padding-top: 50px;
+}  
 }
