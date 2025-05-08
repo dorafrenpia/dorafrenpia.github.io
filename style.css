@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   
   body {
     font-family: 'Segoe UI', sans-serif;
@@ -12,8 +15,12 @@
     color: #333;
     padding: 20px; /* Padding untuk body */
     margin: 0; /* Menghapus margin default */
-    padding-right: 240px; /* Memberikan ruang untuk sidebar */
+    padding-right: 30%; /* Memberikan ruang untuk sidebar */
   }
+  section {
+    scroll-margin-top: 160px; /* Sesuaikan dengan tinggi header kamu */
+  }
+  
   header {
     width: 100%;  /* Memastikan header penuh */
     position: sticky;
@@ -93,6 +100,7 @@
 
   .sticky-header {
     position: sticky;
+    width: 100%;
     top: 0;
     background-color: #282c34; /* Menggunakan background-color yang baru */
     color: white; /* Teks berwarna putih */
@@ -143,12 +151,17 @@
   
   .side-nav a:hover {
     background-color: #575757;
+    color: #0077cc;
   }
   
   .side-nav.active {
     right: 0; /* Sidebar muncul di layar */
   }
-
+  .side-nav a.active {
+    background-color: #0077cc;
+    color: white;
+  }
+  
 
 .isi {
   flex: 1;
@@ -198,13 +211,14 @@
   position: fixed;
   top: 0%; /* Agar tidak tertutup header */
   right: 0;
-  width: 240px;
+  width: 28%;
   height: 100%;
   background-color: #fafafa; /* Soft white */
   padding: 20px;
   border-left: 1px solid #ccc;
-  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  box-shadow: -15px 0 5px rgba(0,0,0,0.1);
   font-size: 15px;
+  border-radius: 5%;
   overflow-y: auto;
 }
 
@@ -233,7 +247,9 @@
     flex-direction: column;
   }
 
-
+  section {
+    scroll-margin-top: 220px; /* Sesuaikan dengan tinggi header kamu */
+  }
   .feature-side {
     border-left: none;
     border-top: 2px solid #ddd;
@@ -251,12 +267,12 @@
   position: fixed;
   top: 0%; /* Agar tidak tertutup header */
   right: 0;
-  width: 240px;
+  
   height: 100%;
   background-color: #fafafa; /* Soft white */
   padding: 20px;
   border-left: 1px solid #ccc;
-  box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+  box-shadow: -10px 0 5px rgba(0,0,0,0.1);
   font-size: 15px;
   
 }
