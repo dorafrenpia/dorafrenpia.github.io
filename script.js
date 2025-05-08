@@ -98,3 +98,10 @@ function toggleMore(btn) {
     }
   }
 }
+  function toggleSidebarRight() {
+    const sidebar = document.getElementById("rightSidebar");
+    sidebar.classList.toggle("fullscreen");
+
+    const btn = document.querySelector(".toggle-btn-rightbar");
+    btn.textContent = sidebar.classList.contains("fullscreen") ? "✕" : "⛶";
+  }
