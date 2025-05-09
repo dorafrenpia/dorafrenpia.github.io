@@ -20,7 +20,16 @@
   section {
     scroll-margin-top: 160px; /* Sesuaikan dengan tinggi header kamu */
   }
-  
+  .shop-link {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.shop-logo {
+  width: 100%;
+  max-width: 100px;
+}
+
   header {
     width: 100%;  /* Memastikan header penuh */
     position: sticky;
