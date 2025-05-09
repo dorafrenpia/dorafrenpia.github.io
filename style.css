@@ -219,7 +219,7 @@
   font-size: 15px;
   border-radius: 5%;
   overflow-y: auto;
-  transition: all 0.3s ease;
+  
 }
 
 
@@ -250,34 +250,50 @@
   .project-card {
     flex-direction: column;
   }
-
-  .right-sidebar.fullscreen {
-    position: fixed !important;
-    width: 100% !important;
-    height: 100% !important;
-    left: 0 !important;
-    right: 0 !important;
-    top: 0 !important;
-    border-radius: 0 !important;
-    z-index: 9999 !important;
-    background-color: #fafafa !important;
-    box-shadow: none !important;
+  body {
+    padding: 20px; /* Padding untuk body */
+    margin: 0 ;  /* Menghapus margin default */    
   }
-
+  #rightSidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Sidebar disembunyikan di luar layar */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    overflow-y: auto;
+    transition: right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* Transisi dari kanan */
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.3); /* Efek bayangan */
+    z-index: 9999;
+    margin: 0 10px; /* Margin tetap */
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  #rightSidebar.fullscreen {
+    right: 0; /* Tampilkan sidebar */
+  }
   .toggle-btn-rightbar {
     display: block;
     position: fixed;
-    top: 10px;
-    right: 15px;
+    top: 50%;
+    right: 0;
+      transform: translateY(-50%) rotate(180deg);
     z-index: 10001;
     background-color: #333;
     color: white;
     border: none;
-    padding: 6px 10px;
     cursor: pointer;
-    font-size: 18px;
-    border-radius: 4px;
+    transition: transform 0.2s ease, right 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   }
+  
+  .toggle-btn-rightbar.fullscreen {
+    transform: translateY(-50%) translateX(-780%); /* Geser ke kiri saat sidebar terbuka */
+  }
+  
+
   section {
     scroll-margin-top: 220px; /* Sesuaikan dengan tinggi header kamu */
   }
@@ -298,10 +314,9 @@
   position: fixed;
   top: 0%; /* Agar tidak tertutup header */
   right: 0;
-  
-  height: 100%;
+  height: 0%;
   background-color: #fafafa; /* Soft white */
-  padding: 20px;
+  padding: 0%;
   border-left: 1px solid #ccc;
   box-shadow: -10px 0 5px rgba(0,0,0,0.1);
   font-size: 15px;

@@ -98,10 +98,18 @@ function toggleMore(btn) {
     }
   }
 }
-  function toggleSidebarRight() {
-    const sidebar = document.getElementById("rightSidebar");
-    sidebar.classList.toggle("fullscreen");
+function toggleSidebarRight() {
+  const sidebar = document.getElementById("rightSidebar");
+  const button = document.querySelector(".toggle-btn-rightbar");
+  const img = button.querySelector("img");
 
-    const btn = document.querySelector(".toggle-btn-rightbar");
-    btn.textContent = sidebar.classList.contains("fullscreen") ? "✕" : "⛶";
-  }
+  sidebar.classList.toggle("fullscreen");
+  button.classList.toggle("fullscreen");
+
+  // Ganti gambar jika kamu punya dua ikon berbeda
+  const imagePath = sidebar.classList.contains("fullscreen")
+    ? "images/IconGerak.png"
+    : "images/IconGerak.png";
+
+  img.src = imagePath;
+}
