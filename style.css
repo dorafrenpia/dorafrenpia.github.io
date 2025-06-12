@@ -271,6 +271,37 @@
   height: 100%;
   
 }
+
+.WhatsappLogo {
+  width: 100px;
+  height: auto;
+  position: fixed;
+  bottom: 150px;
+  right: 100px;
+  z-index: 1000;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+  transition: transform 0.2s ease;
+
+}
+
+.WhatsappLogo:active {
+  transform: scale(0.9);
+}
+
+/* Animasi pulse */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 body{
   padding-right: 0%; /* Memberikan ruang untuk sidebar */
 }
@@ -305,6 +336,35 @@ body{
     padding-right: 15px;
   }
   
+.WhatsappLogo {
+  width: 80px;
+  height: auto;
+  position: fixed;
+  bottom: 100px;
+  left: 20px;
+  z-index: 1000;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+  transition: transform 0.2s ease;
+  
+}
+
+.WhatsappLogo:active {
+  transform: scale(0.9);
+}
+
+/* Animasi pulse */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
   #rightSidebar.fullscreen {
     right: 0; /* Tampilkan sidebar */
   }
