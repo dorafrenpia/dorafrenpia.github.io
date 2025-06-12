@@ -113,3 +113,18 @@ function toggleSidebarRight() {
 
   img.src = imagePath;
 }
+
+  function kirimEmailGmail(emailTujuan) {
+    const subject = encodeURIComponent("Permintaan Jasa Website");
+    const body = encodeURIComponent(
+  `Halo, saya dapat dari dorafrenpia.github.io, saya tertarik dengan jasa Anda.\n\n` +
+  `Berikut isi data saya:\n\n` +
+  `Nama:\nPermintaan:\nBatas Waktu:\n` +
+  `\n` +
+  `Terima kasih.`
+);
+
+
+    const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${emailTujuan}&su=${subject}&body=${body}`;
+    window.open(gmailURL, '_blank');
+  }
